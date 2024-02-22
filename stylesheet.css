@@ -64,13 +64,13 @@
 }
 
 a {
-  color: #1772d0;
+  color: #ED008C;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #8C5371;
   text-decoration: none;
 }
 
@@ -80,7 +80,7 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Menlo', 'Monaco', 'Lucida Console', monospace;
   font-size: 14px;
 }
 
