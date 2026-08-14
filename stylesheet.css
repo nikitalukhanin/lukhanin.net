@@ -139,3 +139,52 @@ h3 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* ---------- Responsive / mobile ---------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* keep news/memories dates on one line */
+th[scope="row"] {
+  white-space: nowrap;
+  vertical-align: top;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  /* stack the intro text and photo */
+  .head-text,
+  .head-photo,
+  .mentor-col {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .head-photo {
+    text-align: center;
+    padding-top: 0 !important;
+  }
+
+  .head-photo img {
+    width: 60%;
+    max-width: 260px;
+  }
+
+  .name {
+    font-size: 26px;
+  }
+
+  body {
+    padding: 0 6px;
+  }
+
+  /* slightly larger tap targets / readable text on small screens */
+  body, td, th, tr, p, a, strong {
+    font-size: 15px;
+  }
+}
