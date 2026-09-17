@@ -34,3 +34,6 @@ Verify changes in the browser at both desktop width and ≤640px (the mobile bre
 - **Memories** entries use the same `th`/`td` row pattern with `MM/YY` dates and a `(photo)` link to `images/…`, newest first.
 - **Mentoring** entries are `<li>` items: `<strong>Name (MM/YY - MM/YY|Current)</strong><br><em>Institution</em>`.
 - When the profile photo, bio, or affiliations change, update the matching values in the meta description, Open Graph/Twitter tags, and the JSON-LD block in `<head>` as well — they duplicate content from the body.
+- `stylesheet.css` and the favicons are linked with a `?v=N` cache-busting query (currently `?v=2`). GitHub Pages serves them with long cache lifetimes, so after editing `stylesheet.css` or replacing anything in `images/favicon/`, bump `N` on *all five* links together.
+- The top link row (Email / CV / Google Scholar) carries `data-umami-event="…-click"` attributes read by the Umami tag. Give any new link there a matching kebab-case event name; links inside the body sections are untracked.
+- The CV is `data/CV_ngLukhanin_MMDDYY.pdf`. Replacing it means adding the new dated file, updating the `href` in the link row, and deleting the old PDF.
